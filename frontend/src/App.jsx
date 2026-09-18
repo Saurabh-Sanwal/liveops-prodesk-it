@@ -9,7 +9,7 @@ function App() {
   const [connected, setConnected] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/tickets')
+    fetch('https://liveops-backend-xn38.onrender.com/api/tickets')
       .then((res) => res.json())
       .then((data) => setTickets(data));
 
